@@ -35,5 +35,15 @@ export class AddTodoComponent {
     });
   }
 
-  onSubmit(): void {}
+  onSubmit(): void {
+    this.submitted = true;
+    this.todoService.postTodo(this.todoForm.value).subscribe({
+      next: (response) => {
+        console.log(response)
+      },
+      error: (err) => {
+        console.log(err)
+      }
+    })
+  }
 }
