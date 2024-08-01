@@ -1,1 +1,52 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky">
+  <div class="d-flex flex-grow-1 m-3">
+    <!-- <span class="w-100 d-lg-none d-block"></span> -->
+    <a class="navbar-brand d-none d-lg-inline-block" routerLink="/">
+      <img class="company-icon" src="/assets/OXIO-LOGO.svg" alt="Logo" />
+    </a>
+    <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" routerLink="/">
+      <img class="company-icon m-2" src="/assets/OXIO-LOGO.svg" alt="Logo" />
+    </a>
+    <div class="w-100 text-right">
+      <button
+        class="navbar-toggler m-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbar">
+    <ul class="navbar-nav ml-auto flex-nowrap">
+      <li class="nav-item">
+        <a
+          class="nav-link m-2 menu-item"
+          data-toggle="collapse"
+          [class.nav-active]="isHomeActive"
+          (click)="routeTo('')"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link m-2 menu-item nav-active"
+          data-toggle="collapse"
+          [class.nav-active]="isChartsActive"
+          (click)="routeTo('charts')"
+          >Charts</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link m-2 menu-item"
+          data-toggle="collapse"
+          [class.nav-active]="isAddActive"
+          (click)="routeTo('add')"
+          >Add a new Todo</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
