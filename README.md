@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
 
+## Scope Cuts:
+
+- Had to cut Unit testing for timing purpose
+- Had to cut state management due to lack of time 
+- Pagination for the table
+
+## Library Selection
+- Went with primeng instead of material as it allows to use charts which material does not have.
+- Used bootstrap as it is easier to implement responsive designs
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
