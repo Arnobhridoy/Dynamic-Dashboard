@@ -1,1 +1,54 @@
-<p>add-todo works!</p>
+<div class="container">
+    <form class="forms-container" [formGroup]="todoForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="id-input">ID </label>
+        <input
+          type="number"
+          formControlName="id"
+          class="form-control"
+          id="id-input"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="userId">User ID </label>
+        <input
+          type="number"
+          formControlName="userId"
+          class="form-control"
+          id="userId"
+          aria-describedby="emailHelp"
+          placeholder="Enter User ID"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="title">Title </label>
+        <input
+          type="text"
+          formControlName="userId"
+          class="form-control"
+          id="title"
+          aria-describedby="titleHelp"
+          placeholder="Enter Title"
+        />
+      </div>
+  
+      <div class="form-group">
+        <label for="completed">Completed </label>
+        <input
+          type="completed"
+          formControlName="userId"
+          class="m-2 form-check-input"
+          aria-label="Checkbox for following text input"
+        />
+      </div>
+  
+      <button class="btn btn-primary" type="submit" color="primary">
+        Submit
+      </button>
+    </form>
+  </div>
+  
