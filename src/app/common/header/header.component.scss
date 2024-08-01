@@ -1,0 +1,25 @@
+.bg-light {
+    background-color: #012730 !important;
+  }
+  
+  .navbar-toggler {
+    background-color: #87fac8;
+    color: white;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #87fac8;
+      text-underline-offset: 16px;
+      text-decoration-thickness: 4px;
+      cursor: pointer;
+    }
+  }
+  
+
+  .nav-item {
+    text-align: center;
+  }
+  
