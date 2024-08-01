@@ -30,7 +30,7 @@ export class AddTodoComponent {
       // TODOS: add validation
       id: [''],
       userId: [''],
-      titele: [''],
+      title: [''],
       completed: [''],
     });
   }
