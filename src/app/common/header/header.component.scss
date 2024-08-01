@@ -18,7 +18,16 @@
     }
   }
   
-
+  
+  .nav-active {
+      text-decoration: underline !important;
+      text-decoration-color: #87fac8 !important;
+      text-decoration-thickness: 4px !important;
+      text-underline-offset: 16px;
+      color: white;
+      font-weight: 700;
+  }
+  
   .nav-item {
     text-align: center;
   }
