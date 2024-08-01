@@ -14,4 +14,12 @@ export class TodoService {
     return this.httpClient.get<Todo[]>('https://jsonplaceholder.typicode.com/todos');
   }
 
+  postTodo(request: Todo) {
+    const url = 'https://jsonplaceholder.typicode.com/todos'
+    const headers = {
+      'Content-type': 'application/json; charset=UTF-8',
+    };
+    return this.httpClient.post(url, request, {headers});
+  }
+
 }
