@@ -1,1 +1,28 @@
-<p>dashboard works!</p>
+<section class="table">
+    <p-table [value]="todoData" [tableStyle]="{'min-width': '60rem'}">
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="id" >
+                    ID <p-sortIcon field="code" />
+                </th>
+                <th pSortableColumn="userId" >
+                    User ID <p-sortIcon field="userId" />
+                </th>
+                <th pSortableColumn="title" >
+                    Title <p-sortIcon field="title" />
+                </th>
+                <th pSortableColumn="completed">
+                    Completed<p-sortIcon field="completed" />
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-todo>
+            <tr>
+                <td>{{ todo.id }}</td>
+                <td>{{ todo.userId }}</td>
+                <td>{{ todo.title }}</td>
+                <td>{{ todo.completed }}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+</section>
