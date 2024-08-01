@@ -2,16 +2,16 @@
     <p-table [value]="todoData" [tableStyle]="{'min-width': '60rem'}">
         <ng-template pTemplate="header">
             <tr>
-                <th pSortableColumn="id" >
+                <th pSortableColumn="id" class="width-20" >
                     ID <p-sortIcon field="code" />
                 </th>
-                <th pSortableColumn="userId" >
+                <th pSortableColumn="userId"   class="width-20" >
                     User ID <p-sortIcon field="userId" />
                 </th>
-                <th pSortableColumn="title" >
+                <th pSortableColumn="title"  class="width-40">
                     Title <p-sortIcon field="title" />
                 </th>
-                <th pSortableColumn="completed">
+                <th pSortableColumn="completed"  class="width-20">
                     Completed<p-sortIcon field="completed" />
                 </th>
             </tr>
